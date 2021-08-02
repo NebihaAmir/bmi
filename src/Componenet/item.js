@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import Numbers from "./numbers"
-export class item extends Component {
+import './tailwind.css'
+
+class Item extends Component {
     render() {
         return (
             <div>
-               <Numbers num = "" /> 
+              <h1 className="text-white"> {this.props.header}</h1>
             </div>
         )
     }
 }
 
-export default item
+export default Item
